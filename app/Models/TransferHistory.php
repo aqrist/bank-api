@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Tip extends Model
+class TransferHistory extends Model
 {
     use HasFactory;
 
@@ -15,8 +15,8 @@ class Tip extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'title',
-        'thumbnail',
-        'url',
+        'sender_id',
+        'receiver_id',
+        'transaction_code'
     ];
 }

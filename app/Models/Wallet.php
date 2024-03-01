@@ -8,4 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class Wallet extends Model
 {
     use HasFactory;
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'balance',
+        'pin',
+        'user_id',
+        'card_number',
+    ];
 }
